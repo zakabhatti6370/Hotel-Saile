@@ -14,18 +14,6 @@ Remaining time 0:57
 
 Reactions
 
-    View Mehwish Riaz’s graphic link
-    like
-    View Mahad Ahmad’s graphic link
-    like
-    View Bushra Basharat’s graphic link
-    like
-    View Divakar Vijayasarathy’s graphic link
-    like
-
-31 impressions
-View analytics
-Zaka Ullah is open to work
 
 
 Add a comment…
