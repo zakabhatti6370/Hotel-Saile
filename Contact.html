@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Saile - Contact Us</title>
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/LOGO Food.png" alt="Hotel Saile" class="logo-img">
+                <div class="logo-text-wrapper">
+                    <h2 class="logo-title">Hotel Saile</h2>
+                    <span class="logo-subtitle">Free Delivery</span>
+                </div>
+            </div>
+            
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-lists">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Menu.html">Menu</a></li>
+                    <li><a href="Blog_page.html">Blog</a></li>
+                    <li class="active"><a href="Contact.html">Contact</a></li>
+                </ul>
+                <div class="search-box">
+                    <input type="text" id="globalSearch" placeholder="Search food...">
+                    <button id="searchBtn" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <button class="btn-primary order-btn">
+                    <i class="fas fa-shopping-bag"></i>
+                    Order Now
+                </button>
+            </div>
+        </nav>
+
+        <!-- Contact Hero Section -->
+        <section class="contact-hero">
+            <div class="contact-header">
+                <h1>Get In <span class="highlight">Touch</span></h1>
+                <div class="breadcrumb">
+                    <a href="Indixs.html">Home</a> / <span>Contact</span>
+                </div>
+                <p class="contact-intro">We'd love to hear from you! Reach out with any questions, feedback, or reservations.</p>
+            </div>
+        </section>
+
+        <!-- Contact Info Cards -->
+        <section class="contact-info-cards">
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>+92 321 6926370</p>
+                    <p>+92 300 1234567</p>
+                    <span class="info-label">24/7 Available</span>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>ZakaUllahbhatti7@gmail.com</p>
+                    <p>info@hotelsaile.com</p>
+                    <span class="info-label">Reply within 24h</span>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>123 Main Street</p>
+                    <p>Lahore, Pakistan</p>
+                    <span class="info-label">Open Daily</span>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Working Hours</h3>
+                    <p>Mon - Fri: 7:00 AM - 6:00 PM</p>
+                    <p>Sat - Sun: 9:00 AM - 4:00 PM</p>
+                    <span class="info-label">All Days Open</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form & Map Section -->
+        <section class="contact-main">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <div class="form-header">
+                        <span class="badge">Send Message</span>
+                        <h2>We'd Love to <span class="highlight">Hear From You</span></h2>
+                        <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">
+                                    <i class="fas fa-user"></i> Your Name
+                                </label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">
+                                    <i class="fas fa-envelope"></i> Email Address
+                                </label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">
+                                    <i class="fas fa-phone"></i> Phone Number
+                                </label>
+                                <input type="tel" id="phone" name="phone" placeholder="+92 XXX XXXXXXX">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">
+                                    <i class="fas fa-tag"></i> Subject
+                                </label>
+                                <select id="subject" name="subject" required>
+                                    <option value="" disabled selected>Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="reservation">Reservation</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="complaint">Complaint</option>
+                                    <option value="career">Career</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fas fa-comment-dots"></i> Your Message
+                            </label>
+                            <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+                        </div>
+
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="copy" name="copy">
+                            <label for="copy">Send a copy of this message to my email</label>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn-primary btn-large">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                            <button type="reset" class="btn-secondary btn-large">
+                                <i class="fas fa-undo"></i>
+                                Reset
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Map & Additional Info -->
+                <div class="contact-sidebar">
+                    <!-- Map -->
+                    <div class="map-wrapper">
+                        <h3><i class="fas fa-map-marked-alt"></i> Find Us Here</h3>
+                        <div class="map-container">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217276.3860140798!2d74.19414595!3d31.582045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e58107d9%3A0xc23abe6ccc7e2462!2sLahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1699876543210!5m2!1sen!2s" 
+                                width="100%" 
+                                height="300" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- Quick Contact -->
+                    <div class="quick-contact">
+                        <h3><i class="fas fa-bolt"></i> Quick Contact</h3>
+                        <div class="quick-contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>+92 321 6926370</p>
+                            </div>
+                        </div>
+                        <div class="quick-contact-item">
+                            <i class="fab fa-facebook-messenger"></i>
+                            <div>
+                                <h4>Messenger</h4>
+                                <p>@hotelsaile</p>
+                            </div>
+                        </div>
+                        <div class="quick-contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Response Time</h4>
+                                <p>Within 2-4 hours</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="contact-social">
+                        <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="faq-header">
+                <span class="badge">FAQ</span>
+                <h2>Frequently Asked <span class="highlight">Questions</span></h2>
+                <p>Find quick answers to common questions</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I make a reservation?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can make a reservation by calling us directly at +92 321 6926370 or by filling out the reservation form on our website.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What are your delivery hours?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We deliver from 7:00 AM to 6:00 PM on weekdays, and 9:00 AM to 4:00 PM on weekends.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you cater for events?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we provide catering services for events. Please contact us at least one week in advance.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is your cancellation policy?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Cancellations made 24 hours before the reservation time are free. Late cancellations may incur a small fee.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hotel Saile</h3>
+                    <p>Delivering happiness through delicious food since 2020. Your satisfaction is our priority.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Working Hours</h4>
+                    <div class="working-hours">
+                        <p><i class="fas fa-calendar-day"></i> Mon - Fri: 7:00 AM - 6:00 PM</p>
+                        <p><i class="fas fa-calendar-week"></i> Sat - Sun: 9:00 AM - 4:00 PM</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Career</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +92 321 6926370</p>
+                    <p><i class="fas fa-envelope"></i> ZakaUllahbhatti7@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Lahore, Pakistan</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hotel Saile. All rights reserved. | Designed with <i class="fas fa-heart"></i> for food lovers</p>
+            </div>
+        </footer>
+    </div>
+
+   
+    <script>
+        // Contact Form Handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form data
+                    const formData = new FormData(this);
+                    const data = Object.fromEntries(formData);
+                    
+                    // Show success message
+                    alert('Thank you for contacting us! We will get back to you soon.');
+                    
+                    // Optional: Send data to server
+                    console.log('Form submitted:', data);
+                    
+                    // Reset form
+                    this.reset();
+                });
+                
+                // Reset button handling
+                const resetBtn = contactForm.querySelector('button[type="reset"]');
+                if (resetBtn) {
+                    resetBtn.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        if (confirm('Are you sure you want to clear the form?')) {
+                            contactForm.reset();
+                        }
+                    });
+                }
+            }
+            
+            // FAQ Accordion
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                const icon = item.querySelector('.fa-chevron-down');
+                
+                // Initially hide answers
+                answer.style.display = 'none';
+                
+                question.addEventListener('click', () => {
+                    // Toggle current item
+                    if (answer.style.display === 'none') {
+                        answer.style.display = 'block';
+                        icon.style.transform = 'rotate(180deg)';
+                    } else {
+                        answer.style.display = 'none';
+                        icon.style.transform = 'rotate(0deg)';
+                    }
+                });
+            });
+            
+            // Copy phone number to clipboard
+            const phoneNumbers = document.querySelectorAll('.info-card p');
+            phoneNumbers.forEach(phone => {
+                if (phone.textContent.includes('+92')) {
+                    phone.style.cursor = 'pointer';
+                    phone.addEventListener('click', function() {
+                        const text = this.textContent;
+                        navigator.clipboard.writeText(text).then(() => {
+                            alert('Phone number copied to clipboard!');
+                        });
+                    });
+                }
+            });
+            
+            // Form validation
+            const inputs = document.querySelectorAll('input, textarea, select');
+            inputs.forEach(input => {
+                input.addEventListener('invalid', function(e) {
+                    e.preventDefault();
+                    this.classList.add('error');
+                });
+                
+                input.addEventListener('input', function() {
+                    if (this.classList.contains('error')) {
+                        this.classList.remove('error');
+                    }
+                });
+            });
+        });
+    </script>
+     <!-- Order Modal -->
+     <div class="order-modal" id="orderModal">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h2><i class="fas fa-shopping-bag"></i> Your Orders</h2>
+                 <button class="modal-close"><i class="fas fa-times"></i></button>
+             </div>
+             
+             <div class="modal-body">
+                 <!-- Order Tabs -->
+                 <div class="order-tabs">
+                     <button class="order-tab active" data-tab="cart">Cart <span class="cart-count">0</span></button>
+                     <button class="order-tab" data-tab="history">Order History</button>
+                     <button class="order-tab" data-tab="track">Track Order</button>
+                 </div>
+                 
+                 <!-- Cart Tab -->
+                 <div class="tab-content active" id="cartTab">
+                     <div class="cart-items">
+                         <!-- Cart items will be added here dynamically -->
+                     </div>
+                     
+                     <div class="cart-summary">
+                         <div class="summary-row">
+                             <span>Subtotal:</span>
+                             <span class="subtotal">$0.00</span>
+                         </div>
+                         <div class="summary-row">
+                             <span>Delivery Fee:</span>
+                             <span class="delivery-fee">$2.00</span>
+                         </div>
+                         <div class="summary-row">
+                             <span>Tax (10%):</span>
+                             <span class="tax">$0.00</span>
+                         </div>
+                         <div class="summary-row total">
+                             <span>Total:</span>
+                             <span class="total-amount">$0.00</span>
+                         </div>
+                     </div>
+                     
+                     <div class="payment-methods">
+                         <h3>Select Payment Method</h3>
+                         <div class="payment-options">
+                             <label class="payment-option">
+                                 <input type="radio" name="payment" value="cash" checked>
+                                 <i class="fas fa-money-bill-wave"></i>
+                                 <span>Cash on Delivery</span>
+                             </label>
+                             <label class="payment-option">
+                                 <input type="radio" name="payment" value="card">
+                                 <i class="fas fa-credit-card"></i>
+                                 <span>Credit Card</span>
+                             </label>
+                             <label class="payment-option">
+                                 <input type="radio" name="payment" value="easypaisa">
+                                 <i class="fas fa-mobile-alt"></i>
+                                 <span>Easypaisa</span>
+                             </label>
+                             <label class="payment-option">
+                                 <input type="radio" name="payment" value="jazzcash">
+                                 <i class="fas fa-wallet"></i>
+                                 <span>JazzCash</span>
+                             </label>
+                         </div>
+                     </div>
+                     
+                     <!-- Card Payment Form -->
+                     <div class="card-payment-form" id="cardPaymentForm" style="display: none;">
+                         <h3>Card Details</h3>
+                         <div class="form-group">
+                             <input type="text" placeholder="Card Number" class="card-input">
+                         </div>
+                         <div class="form-row">
+                             <div class="form-group">
+                                 <input type="text" placeholder="MM/YY" class="card-input">
+                             </div>
+                             <div class="form-group">
+                                 <input type="text" placeholder="CVV" class="card-input">
+                             </div>
+                         </div>
+                         <div class="form-group">
+                             <input type="text" placeholder="Cardholder Name" class="card-input">
+                         </div>
+                     </div>
+                     
+                     <!-- Mobile Payment Form -->
+                     <div class="mobile-payment-form" id="mobilePaymentForm" style="display: none;">
+                         <h3>Mobile Account Details</h3>
+                         <div class="form-group">
+                             <input type="text" placeholder="Mobile Number" class="mobile-input">
+                         </div>
+                         <div class="form-group">
+                             <input type="text" placeholder="Account Holder Name" class="mobile-input">
+                         </div>
+                     </div>
+                     
+                     <div class="modal-actions">
+                         <button class="btn-secondary clear-cart">Clear Cart</button>
+                         <button class="btn-primary checkout-btn">
+                             <i class="fas fa-lock"></i>
+                             Place Order
+                         </button>
+                     </div>
+                 </div>
+                 
+                 <!-- Order History Tab -->
+                 <div class="tab-content" id="historyTab">
+                     <div class="order-history-list">
+                         <!-- Order history will be added here dynamically -->
+                     </div>
+                 </div>
+                 
+                 <!-- Track Order Tab -->
+                 <div class="tab-content" id="trackTab">
+                     <div class="track-order">
+                         <div class="track-input">
+                             <input type="text" id="orderId" placeholder="Enter Order ID">
+                             <button class="btn-primary track-btn">Track</button>
+                         </div>
+                         <div class="track-result"></div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     
+     <!-- Order Success Modal -->
+     <div class="success-modal" id="successModal">
+         <div class="success-content">
+             <i class="fas fa-check-circle"></i>
+             <h2>Order Placed Successfully!</h2>
+             <p>Your order ID is: <span id="orderIdDisplay">#ORD001</span></p>
+             <p>You can track your order in Order History</p>
+             <button class="btn-primary close-success">Continue Shopping</button>
+         </div>
+     </div>
+   <script src="JS/main.js"></script>
+   <script src="JS/sacript.js"></script>
+
+</body>
+</html>

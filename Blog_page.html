@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Saile - Blog & News</title>
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/LOGO Food.png" alt="Hotel Saile" class="logo-img">
+                <div class="logo-text-wrapper">
+                    <h2 class="logo-title">Hotel Saile</h2>
+                    <span class="logo-subtitle">Free Delivery</span>
+                </div>
+            </div>
+            
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-lists">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Menu.html">Menu</a></li>
+                    <li class="active"><a href="Blog_page.html">Blog</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+                <div class="search-box">
+                    <input type="text" id="globalSearch" placeholder="Search food...">
+                    <button id="searchBtn" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <button class="btn-primary order-btn">
+                    <i class="fas fa-shopping-bag"></i>
+                    Order Now
+                </button>
+            </div>
+        </nav>
+
+        <!-- Blog Hero Section -->
+        <section class="blog-hero">
+            <div class="blog-header">
+                <h1>Our <span class="highlight">Blog</span> & News</h1>
+                <div class="breadcrumb">
+                    <a href="Indixs.html">Home</a> / <span>Blog</span>
+                </div>
+                <p class="blog-intro">Discover the latest stories, recipes, and updates from our kitchen</p>
+            </div>
+        </section>
+
+        <!-- Featured Post -->
+        <section class="featured-post">
+            <div class="featured-grid">
+                <div class="featured-image">
+                    <img src="img/Mix dish.png" alt="Featured Dish">
+                    <div class="featured-badge">Featured</div>
+                </div>
+                <div class="featured-content">
+                    <div class="post-meta">
+                        <span class="post-category">Recipe</span>
+                        <span class="post-date"><i class="far fa-calendar-alt"></i> August 18, 2024</span>
+                        <span class="post-author"><i class="far fa-user"></i> By Chef John</span>
+                    </div>
+                    <h2>The Secret to Perfect Mixed Grill Platter</h2>
+                    <p class="post-excerpt">Discover our chef's secret techniques for creating the perfect mixed grill platter that will impress your guests. From marination to grilling time, we share all the tips and tricks.</p>
+                    <div class="post-stats">
+                        <span><i class="far fa-heart"></i> 2.5K Likes</span>
+                        <span><i class="far fa-comment"></i> 150 Comments</span>
+                        <span><i class="far fa-share-square"></i> Share</span>
+                    </div>
+                    <a href="#" class="btn-primary">Read Full Story <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Categories -->
+        <section class="blog-categories">
+            <div class="categories-wrapper">
+                <button class="category-btn active" data-category="all">All Posts</button>
+                <button class="category-btn" data-category="recipes">Recipes</button>
+                <button class="category-btn" data-category="news">News & Events</button>
+                <button class="category-btn" data-category="tips">Cooking Tips</button>
+                <button class="category-btn" data-category="stories">Stories</button>
+            </div>
+        </section>
+
+        <!-- Blog Posts Grid -->
+        <section class="blog-posts-section">
+            <div class="blog-grid">
+                <!-- Post 1 -->
+                <article class="blog-card" data-category="recipes">
+                    <div class="blog-card-image">
+                        <img src="img/Misala.png" alt="Masala Recipe">
+                        <div class="blog-card-badge">New Recipe</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category"><i class="fas fa-utensils"></i> Recipes</span>
+                            <span class="blog-date"><i class="far fa-clock"></i> Aug 17, 2024</span>
+                        </div>
+                        <h3>Authentic Masala: A Taste of Tradition</h3>
+                        <p>Learn how to prepare authentic masala blend that brings the perfect balance of spices to your dishes.</p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <img src="img/chef1.jpg" alt="Author" onerror="this.src='https://via.placeholder.com/40x40?text=Chef'">
+                                <span>Chef Sarah</span>
+                            </div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 2 -->
+                <article class="blog-card" data-category="news">
+                    <div class="blog-card-image">
+                        <img src="img/Chikan rost.png" alt="Restaurant News">
+                        <div class="blog-card-badge">Announcement</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category"><i class="fas fa-newspaper"></i> News</span>
+                            <span class="blog-date"><i class="far fa-clock"></i> Aug 15, 2024</span>
+                        </div>
+                        <h3>New Branch Opening in Downtown</h3>
+                        <p>We're excited to announce our new location opening next month. Get ready for special launch offers!</p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <img src="img/chef2.jpg" alt="Author" onerror="this.src='https://via.placeholder.com/40x40?text=Admin'">
+                                <span>Management</span>
+                            </div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 3 -->
+                <article class="blog-card" data-category="tips">
+                    <div class="blog-card-image">
+                        <img src="img/coffee.jpg" alt="Coffee Tips">
+                        <div class="blog-card-badge">Tips & Tricks</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category"><i class="fas fa-lightbulb"></i> Tips</span>
+                            <span class="blog-date"><i class="far fa-clock"></i> Aug 12, 2024</span>
+                        </div>
+                        <h3>Perfect Coffee at Home: Barista Secrets</h3>
+                        <p>Learn professional tips to brew the perfect cup of coffee right in your kitchen.</p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <img src="img/chef3.jpg" alt="Author" onerror="this.src='https://via.placeholder.com/40x40?text=Barista'">
+                                <span>Mike, Barista</span>
+                            </div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 4 -->
+                <article class="blog-card" data-category="recipes">
+                    <div class="blog-card-image">
+                        <img src="img/Zingar Chikan.png" alt="Zinger Recipe">
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category"><i class="fas fa-utensils"></i> Recipes</span>
+                            <span class="blog-date"><i class="far fa-clock"></i> Aug 10, 2024</span>
+                        </div>
+                        <h3>Homemade Zinger: Better Than Takeout</h3>
+                        <p>Crunchy, spicy, and delicious - learn to make restaurant-style zinger at home.</p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <img src="img/chef1.jpg" alt="Author" onerror="this.src='https://via.placeholder.com/40x40?text=Chef'">
+                                <span>Chef John</span>
+                            </div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 5 -->
+                <article class="blog-card" data-category="stories">
+                    <div class="blog-card-image">
+                        <img src="img/Shagi full.png" alt="Kitchen Story">
+                        <div class="blog-card-badge">Story</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category"><i class="fas fa-book-open"></i> Stories</span>
+                            <span class="blog-date"><i class="far fa-clock"></i> Aug 8, 2024</span>
+                        </div>
+                        <h3>Behind the Scenes: A Day in Our Kitchen</h3>
+                        <p>Take a peek behind the curtain and see how your favorite dishes come to life.</p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <img src="img/chef2.jpg" alt="Author" onerror="this.src='https://via.placeholder.com/40x40?text=Team'">
+                                <span>Kitchen Team</span>
+                            </div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 6 -->
+                <article class="blog-card" data-category="tips">
+                    <div class="blog-card-image">
+                        <img src="img/Kabab_and_Chikan.png" alt="Grilling Tips">
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category"><i class="fas fa-lightbulb"></i> Tips</span>
+                            <span class="blog-date"><i class="far fa-clock"></i> Aug 5, 2024</span>
+                        </div>
+                        <h3>Master the Grill: BBQ Tips for Beginners</h3>
+                        <p>Everything you need to know to become a grill master this summer.</p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <img src="img/chef3.jpg" alt="Author" onerror="this.src='https://via.placeholder.com/40x40?text=Chef'">
+                                <span>Chef Michael</span>
+                            </div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Pagination -->
+        <section class="pagination-section">
+            <div class="pagination">
+                <a href="#" class="page-link disabled"><i class="fas fa-chevron-left"></i></a>
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link">4</a>
+                <a href="#" class="page-link">5</a>
+                <a href="#" class="page-link"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="newsletter-content">
+                <span class="badge">Stay Updated</span>
+                <h2>Subscribe to Our <span class="highlight">Newsletter</span></h2>
+                <p>Get the latest recipes, news, and exclusive offers directly in your inbox</p>
+                
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn-primary">Subscribe <i class="fas fa-paper-plane"></i></button>
+                    </div>
+                    <small>We respect your privacy. Unsubscribe at any time.</small>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hotel Saile</h3>
+                    <p>Delivering happiness through delicious food since 2020. Your satisfaction is our priority.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Working Hours</h4>
+                    <div class="working-hours">
+                        <p><i class="fas fa-calendar-day"></i> Mon - Fri: 7:00 AM - 6:00 PM</p>
+                        <p><i class="fas fa-calendar-week"></i> Sat - Sun: 9:00 AM - 4:00 PM</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Career</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +92 321 6926370</p>
+                    <p><i class="fas fa-envelope"></i> ZakaUllahbhatti7@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Lahore, Pakistan</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hotel Saile. All rights reserved. | Designed with <i class="fas fa-heart"></i> for food lovers</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="JS/main.js"></script>
+    <script>
+        // Blog Category Filter
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            const blogCards = document.querySelectorAll('.blog-card');
+
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    categoryBtns.forEach(b => b.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Get category
+                    const category = this.getAttribute('data-category');
+                    
+                    // Filter blog cards
+                    blogCards.forEach(card => {
+                        if (category === 'all' || card.getAttribute('data-category') === category) {
+                            card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            }, 10);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+
+            // Newsletter Form Submission
+            const newsletterForm = document.getElementById('newsletterForm');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const email = this.querySelector('input[type="email"]').value;
+                    
+                    // Show success message
+                    alert(`Thank you for subscribing with ${email}! You'll receive our newsletter soon.`);
+                    
+                    // Reset form
+                    this.reset();
+                });
+            }
+
+            // Like button functionality
+            const likeButtons = document.querySelectorAll('.fa-heart');
+            likeButtons.forEach(like => {
+                like.parentElement.addEventListener('click', function() {
+                    const icon = this.querySelector('i');
+                    icon.classList.toggle('far');
+                    icon.classList.toggle('fas');
+                    
+                    if (icon.classList.contains('fas')) {
+                        icon.style.color = '#ff4757';
+                    } else {
+                        icon.style.color = '';
+                    }
+                });
+            });
+
+            // Read more hover effect
+            const readMoreLinks = document.querySelectorAll('.read-more');
+            readMoreLinks.forEach(link => {
+                link.addEventListener('mouseenter', function() {
+                    this.querySelector('i').style.transform = 'translateX(5px)';
+                });
+                
+                link.addEventListener('mouseleave', function() {
+                    this.querySelector('i').style.transform = 'translateX(0)';
+                });
+            });
+        });
+    </script>
+     <script src="JS/sacript.js"></script>
+     <!-- Order Modal -->
+     <div class="order-modal" id="orderModal">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h2><i class="fas fa-shopping-bag"></i> Your Orders</h2>
+                 <button class="modal-close"><i class="fas fa-times"></i></button>
+             </div>
+             
+             <div class="modal-body">
+                 <!-- Order Tabs -->
+                 <div class="order-tabs">
+                     <button class="order-tab active" data-tab="cart">Cart <span class="cart-count">0</span></button>
+                     <button class="order-tab" data-tab="history">Order History</button>
+                     <button class="order-tab" data-tab="track">Track Order</button>
+                 </div>
+                 
+                 <!-- Cart Tab -->
+                 <div class="tab-content active" id="cartTab">
+                     <div class="cart-items">
+                         <!-- Cart items will be added here dynamically -->
+                     </div>
+                     
+                     <div class="cart-summary">
+                         <div class="summary-row">
+                             <span>Subtotal:</span>
+                             <span class="subtotal">$0.00</span>
+                         </div>
+                         <div class="summary-row">
+                             <span>Delivery Fee:</span>
+                             <span class="delivery-fee">$2.00</span>
+                         </div>
+                         <div class="summary-row">
+                             <span>Tax (10%):</span>
+                             <span class="tax">$0.00</span>
+                         </div>
+                         <div class="summary-row total">
+                             <span>Total:</span>
+                             <span class="total-amount">$0.00</span>
+                         </div>
+                     </div>
+                     
+                     <div class="payment-methods">
+                         <h3>Select Payment Method</h3>
+                         <div class="payment-options">
+                             <label class="payment-option">
+                                 <input type="radio" name="payment" value="cash" checked>
+                                 <i class="fas fa-money-bill-wave"></i>
+                                 <span>Cash on Delivery</span>
+                             </label>
+                             <label class="payment-option">
+                                 <input type="radio" name="payment" value="card">
+                                 <i class="fas fa-credit-card"></i>
+                                 <span>Credit Card</span>
+                             </label>
+                             <label class="payment-option">
+                                 <input type="radio" name="payment" value="easypaisa">
+                                 <i class="fas fa-mobile-alt"></i>
+                                 <span>Easypaisa</span>
+                             </label>
+                             <label class="payment-option">
+                                 <input type="radio" name="payment" value="jazzcash">
+                                 <i class="fas fa-wallet"></i>
+                                 <span>JazzCash</span>
+                             </label>
+                         </div>
+                     </div>
+                     
+                     <!-- Card Payment Form -->
+                     <div class="card-payment-form" id="cardPaymentForm" style="display: none;">
+                         <h3>Card Details</h3>
+                         <div class="form-group">
+                             <input type="text" placeholder="Card Number" class="card-input">
+                         </div>
+                         <div class="form-row">
+                             <div class="form-group">
+                                 <input type="text" placeholder="MM/YY" class="card-input">
+                             </div>
+                             <div class="form-group">
+                                 <input type="text" placeholder="CVV" class="card-input">
+                             </div>
+                         </div>
+                         <div class="form-group">
+                             <input type="text" placeholder="Cardholder Name" class="card-input">
+                         </div>
+                     </div>
+                     
+                     <!-- Mobile Payment Form -->
+                     <div class="mobile-payment-form" id="mobilePaymentForm" style="display: none;">
+                         <h3>Mobile Account Details</h3>
+                         <div class="form-group">
+                             <input type="text" placeholder="Mobile Number" class="mobile-input">
+                         </div>
+                         <div class="form-group">
+                             <input type="text" placeholder="Account Holder Name" class="mobile-input">
+                         </div>
+                     </div>
+                     
+                     <div class="modal-actions">
+                         <button class="btn-secondary clear-cart">Clear Cart</button>
+                         <button class="btn-primary checkout-btn">
+                             <i class="fas fa-lock"></i>
+                             Place Order
+                         </button>
+                     </div>
+                 </div>
+                 
+                 <!-- Order History Tab -->
+                 <div class="tab-content" id="historyTab">
+                     <div class="order-history-list">
+                         <!-- Order history will be added here dynamically -->
+                     </div>
+                 </div>
+                 
+                 <!-- Track Order Tab -->
+                 <div class="tab-content" id="trackTab">
+                     <div class="track-order">
+                         <div class="track-input">
+                             <input type="text" id="orderId" placeholder="Enter Order ID">
+                             <button class="btn-primary track-btn">Track</button>
+                         </div>
+                         <div class="track-result"></div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     
+     <!-- Order Success Modal -->
+     <div class="success-modal" id="successModal">
+         <div class="success-content">
+             <i class="fas fa-check-circle"></i>
+             <h2>Order Placed Successfully!</h2>
+             <p>Your order ID is: <span id="orderIdDisplay">#ORD001</span></p>
+             <p>You can track your order in Order History</p>
+             <button class="btn-primary close-success">Continue Shopping</button>
+         </div>
+     </div>
+</body>
+</html>

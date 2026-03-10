@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Saile - Our Menu</title>
+    <link rel="stylesheet" href="css/Style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/LOGO Food.png" alt="Hotel Saile" class="logo-img">
+                <div class="logo-text-wrapper">
+                    <h2 class="logo-title">Hotel Saile</h2>
+                    <span class="logo-subtitle">Free Delivery</span>
+                </div>
+            </div>
+            
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-lists">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li class="active"><a href="Menu.html">Menu</a></li>
+                    <li><a href="Blog_page.html">Blog</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+                <div class="search-box">
+                    <input type="text" id="globalSearch" placeholder="Search food...">
+                    <button id="searchBtn" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <button class="btn-primary order-btn">
+                    <i class="fas fa-shopping-bag"></i>
+                    Order Now
+                </button>
+            </div>
+        </nav>
+
+        <!-- Menu Hero Section -->
+        <section class="menu-hero">
+            <div class="menu-header">
+                <h1>Our Delicious <span class="highlight">Menu</span></h1>
+                <div class="breadcrumb">
+                    <a href="Indixs.html">Home</a> / <span>Menu</span>
+                </div>
+                <p class="menu-intro">Explore our wide range of delicious dishes prepared with love and fresh ingredients</p>
+            </div>
+        </section>
+
+        <!-- Menu Categories -->
+        <section class="menu-categories">
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="all">All Items</button>
+                <button class="category-tab" data-category="grill">Grill Items</button>
+                <button class="category-tab" data-category="bbq">BBQ</button>
+                <button class="category-tab" data-category="pizza">Pizza</button>
+                <button class="category-tab" data-category="beverages">Beverages</button>
+            </div>
+        </section>
+
+        <!-- Menu Items Grid -->
+        <section class="menu-grid-section">
+            <div class="menu-grid">
+                <!-- Grill Items -->
+                <div class="menu-item" data-category="grill">
+                    <div class="menu-item-image">
+                        <img src="img/Chikan rost.png" alt="Chicken Roast">
+                        <div class="menu-item-badge">Popular</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Chicken Roast</h3>
+                        <p>Juicy roasted chicken with special herbs and spices</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$8.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="grill">
+                    <div class="menu-item-image">
+                        <img src="img/pngwing.com (1).png" alt="Delicious Steak">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Delicious Steak</h3>
+                        <p>Premium beef steak grilled to perfection</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$12.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="grill">
+                    <div class="menu-item-image">
+                        <img src="img/Shagi full.png" alt="Full Chicken Roast">
+                        <div class="menu-item-badge">Family Size</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Full Chicken Roast</h3>
+                        <p>Whole chicken roast for family sharing</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$15.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BBQ Items -->
+                <div class="menu-item" data-category="bbq">
+                    <div class="menu-item-image">
+                        <img src="img/Chikan Tika.png" alt="Chicken Tikka">
+                        <div class="menu-item-badge">Spicy</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Chicken Tikka</h3>
+                        <p>Traditional chicken tikka with authentic spices</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$9.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="bbq">
+                    <div class="menu-item-image">
+                        <img src="img/Chikan Cabab.png" alt="Chicken Kabab">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Chicken Kabab</h3>
+                        <p>Seekh kababs with mint chutney</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$8.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="bbq">
+                    <div class="menu-item-image">
+                        <img src="img/Zingar Chikan.png" alt="Zinger Chicken">
+                        <div class="menu-item-badge">New</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Zinger Chicken</h3>
+                        <p>Crispy zinger chicken with special sauce</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$10.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="bbq">
+                    <div class="menu-item-image">
+                        <img src="img/Kabab_and_Chikan.png" alt="Chicken Tikka Desi">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Chicken Tikka Desi</h3>
+                        <p>Desi style chicken tikka with traditional masala</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$9.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizza Items -->
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-image">
+                        <img src="img/Pizaa.png" alt="Large Pizza">
+                        <div class="menu-item-badge">Chef's Special</div>
+                    </div>
+                
+                    <div class="menu-item-content">
+                        <h3>Full Large Pizza Offer</h3>
+                        <p>Loaded with toppings and extra cheese</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$13.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i> Add</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-image">
+                        <img src="img/Pizaa2.png" alt="Large Pizza">
+                        <div class="menu-item-badge">Chef's Special</div>
+                    </div>
+                
+                    <div class="menu-item-content">
+                        <h3>Full Large Pizza</h3>
+                        <p>Loaded with toppings and extra cheese</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$13.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i> Add</button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+                <!-- Beverages -->
+                <div class="menu-item" data-category="beverages">
+                    <div class="menu-item-image">
+                        <img src="img/coffee.jpg" alt="Coffee">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Fresh Coffee</h3>
+                        <p>Premium coffee beans, freshly brewed</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$3.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="beverages">
+                    <div class="menu-item-image">
+                        <img src="img/frappe.jpeg" alt="Fruit Salad">
+                        <div class="menu-item-badge">Healthy</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Fruit Salad</h3>
+                        <p>Fresh seasonal fruits with honey</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$5.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="beverages">
+                    <div class="menu-item-image">
+                        <img src="img/flat white.jpg" alt="Flat White">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Flat White Coffee</h3>
+                        <p>Smooth and creamy coffee delight</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$4.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="beverages">
+                    <div class="menu-item-image">
+                        <img src="img/espresso.jpeg" alt="Espresso">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Espresso Mix</h3>
+                        <p>Strong espresso with your choice of flavor</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$3.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="beverages">
+                    <div class="menu-item-image">
+                        <img src="img/coffee.jpg" alt="Coffee">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Fresh Coffee</h3>
+                        <p>Premium coffee beans, freshly brewed</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$3.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="beverages">
+                    <div class="menu-item-image">
+                        <img src="img/coffee.jpg" alt="Coffee">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Fresh Coffee</h3>
+                        <p>Premium coffee beans, freshly brewed</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$3.99</span>
+                            <button class="add-to-cart"><i class="fas fa-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Feature Section -->
+        <section class="video-section">
+            <div class="video-content">
+                <div class="video-text">
+                    <span class="badge">Behind the Scenes</span>
+                    <h2>Watch How We Make Our <span class="highlight">Perfect Coffee</span></h2>
+                    <p>Experience the art of coffee making with our expert baristas. Every cup is made with passion and precision.</p>
+                </div>
+                <div class="video-wrapper">
+                    <video src="img/coffee making.mp4" autoplay loop muted playsinline>
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order Form Section -->
+        <section class="order-section">
+            <div class="order-container">
+                <div class="order-header">
+                    <span class="badge">Reservation</span>
+                    <h2>Book Your <span class="highlight">Table</span></h2>
+                    <p>Reserve your table now and enjoy a delightful dining experience</p>
+                </div>
+
+                <div class="order-form-container">
+                    <form class="order-form" id="orderForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customer-name">
+                                    <i class="fas fa-user"></i> Customer Name
+                                </label>
+                                <input type="text" id="customer-name" name="customer-name" placeholder="Enter your full name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">
+                                    <i class="fas fa-phone"></i> Phone Number
+                                </label>
+                                <input type="tel" id="phone" name="phone" placeholder="+92 XXX XXXXXXX" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="address">
+                                    <i class="fas fa-map-marker-alt"></i> Address
+                                </label>
+                                <input type="text" id="address" name="address" placeholder="Your delivery address" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="guests">
+                                    <i class="fas fa-users"></i> Number of Guests
+                                </label>
+                                <select id="guests" name="guests" required>
+                                    <option value="" disabled selected>Select guests</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                    <option value="3">3 People</option>
+                                    <option value="4">4 People</option>
+                                    <option value="5">5+ People</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="order-date">
+                                    <i class="fas fa-calendar-alt"></i> Date & Time
+                                </label>
+                                <input type="datetime-local" id="order-date" name="order-date" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>
+                                    <i class="fas fa-utensils"></i> Select Food Items
+                                </label>
+                                <div class="food-items-container">
+                                    <label class="food-item-checkbox">
+                                        <input type="checkbox" name="food-items" value="chicken-roast">
+                                        <span>Chicken Roast</span>
+                                    </label>
+                                    <label class="food-item-checkbox">
+                                        <input type="checkbox" name="food-items" value="steak">
+                                        <span>Delicious Steak</span>
+                                    </label>
+                                    <label class="food-item-checkbox">
+                                        <input type="checkbox" name="food-items" value="chicken-tikka">
+                                        <span>Chicken Tikka</span>
+                                    </label>
+                                    <label class="food-item-checkbox">
+                                        <input type="checkbox" name="food-items" value="pizza">
+                                        <span>Large Pizza</span>
+                                    </label>
+                                    <label class="food-item-checkbox">
+                                        <input type="checkbox" name="food-items" value="coffee">
+                                        <span>Coffee</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="feedback">
+                                <i class="fas fa-comment-dots"></i> Special Requests / Feedback
+                            </label>
+                            <textarea id="feedback" name="feedback" rows="4" placeholder="Any special requests or feedback..."></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn-primary btn-large">
+                                <i class="fas fa-check-circle"></i>
+                                Submit Reservation
+                            </button>
+                            <button type="reset" class="btn-secondary btn-large">
+                                <i class="fas fa-undo"></i>
+                                Reset Form
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hotel Saile</h3>
+                    <p>Delivering happiness through delicious food since 2020. Your satisfaction is our priority.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Working Hours</h4>
+                    <div class="working-hours">
+                        <p><i class="fas fa-calendar-day"></i> Mon - Fri: 7:00 AM - 6:00 PM</p>
+                        <p><i class="fas fa-calendar-week"></i> Sat - Sun: 9:00 AM - 4:00 PM</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Career</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +92 321 6926370</p>
+                    <p><i class="fas fa-envelope"></i> ZakaUllahbhatti7@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Lahore, Pakistan</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hotel Saile. All rights reserved. | Designed with <i class="fas fa-heart"></i> for food lovers</p>
+            </div>
+        </footer>
+    </div>
+    <!-- Order Modal -->
+    <div class="order-modal" id="orderModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-shopping-bag"></i> Your Orders</h2>
+                <button class="modal-close"><i class="fas fa-times"></i></button>
+            </div>
+            
+            <div class="modal-body">
+                <!-- Order Tabs -->
+                <div class="order-tabs">
+                    <button class="order-tab active" data-tab="cart">Cart <span class="cart-count">0</span></button>
+                    <button class="order-tab" data-tab="history">Order History</button>
+                    <button class="order-tab" data-tab="track">Track Order</button>
+                </div>
+                
+                <!-- Cart Tab -->
+                <div class="tab-content active" id="cartTab">
+                    <div class="cart-items">
+                        <!-- Cart items will be added here dynamically -->
+                    </div>
+                    
+                    <div class="cart-summary">
+                        <div class="summary-row">
+                            <span>Subtotal:</span>
+                            <span class="subtotal">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Delivery Fee:</span>
+                            <span class="delivery-fee">$2.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Tax (10%):</span>
+                            <span class="tax">$0.00</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total:</span>
+                            <span class="total-amount">$0.00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-methods">
+                        <h3>Select Payment Method</h3>
+                        <div class="payment-options">
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="cash" checked>
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span>Cash on Delivery</span>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="card">
+                                <i class="fas fa-credit-card"></i>
+                                <span>Credit Card</span>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="easypaisa">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Easypaisa</span>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="jazzcash">
+                                <i class="fas fa-wallet"></i>
+                                <span>JazzCash</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Card Payment Form -->
+                    <div class="card-payment-form" id="cardPaymentForm" style="display: none;">
+                        <h3>Card Details</h3>
+                        <div class="form-group">
+                            <input type="text" placeholder="Card Number" class="card-input">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" placeholder="MM/YY" class="card-input">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="CVV" class="card-input">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Cardholder Name" class="card-input">
+                        </div>
+                    </div>
+                    
+                    <!-- Mobile Payment Form -->
+                    <div class="mobile-payment-form" id="mobilePaymentForm" style="display: none;">
+                        <h3>Mobile Account Details</h3>
+                        <div class="form-group">
+                            <input type="text" placeholder="Mobile Number" class="mobile-input">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Account Holder Name" class="mobile-input">
+                        </div>
+                    </div>
+                    
+                    <div class="modal-actions">
+                        <button class="btn-secondary clear-cart">Clear Cart</button>
+                        <button class="btn-primary checkout-btn">
+                            <i class="fas fa-lock"></i>
+                            Place Order
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Order History Tab -->
+                <div class="tab-content" id="historyTab">
+                    <div class="order-history-list">
+                        <!-- Order history will be added here dynamically -->
+                    </div>
+                </div>
+                
+                <!-- Track Order Tab -->
+                <div class="tab-content" id="trackTab">
+                    <div class="track-order">
+                        <div class="track-input">
+                            <input type="text" id="orderId" placeholder="Enter Order ID">
+                            <button class="btn-primary track-btn">Track</button>
+                        </div>
+                        <div class="track-result"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Order Success Modal -->
+    <div class="success-modal" id="successModal">
+        <div class="success-content">
+            <i class="fas fa-check-circle"></i>
+            <h2>Order Placed Successfully!</h2>
+            <p>Your order ID is: <span id="orderIdDisplay">#ORD001</span></p>
+            <p>You can track your order in Order History</p>
+            <button class="btn-primary close-success">Continue Shopping</button>
+        </div>
+    </div>
+    <script src="JS/main.js"></script>
+    <script src="JS/sacript.js"></script>
+   
+</body>
+</html>
